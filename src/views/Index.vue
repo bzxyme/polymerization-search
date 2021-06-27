@@ -17,13 +17,13 @@
             <div>
               <div class="float-left pt-1" @click="logoShow = !logoShow">
                 <v-img
-                  src="../assets/img/baidu.png"
+                  src="https://cdn.jsdelivr.net/gh/Nocae/polymerization-search@master/src/assets/img/baidu.png"
                   max-height="40"
                   max-width="40"
                   v-if="logoShow"
                 ></v-img>
                 <v-img
-                  src="../assets/img/google.png"
+                  src="https://cdn.jsdelivr.net/gh/Nocae/polymerization-search@master/src/assets/img/google.png"
                   max-height="40"
                   max-width="40"
                   v-else
@@ -74,6 +74,9 @@ export default {
       searchKey: "",
       logoShow: true,
     };
+  },
+  created() {
+    document.documentElement.style.overflowY = "hidden";
   },
   computed: {},
   methods: {
