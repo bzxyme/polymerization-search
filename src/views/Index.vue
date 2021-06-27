@@ -9,9 +9,9 @@
           <v-col cols="10" class="mt-n16 pb-016">
             <div align="center" class="mb-6">
               <v-img
-                max-height="120"
-                max-width="270"
-                src="https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png"
+                max-height="180"
+                max-width="340"
+                src="https://cdn.jsdelivr.net/gh/Nocae/polymerization-search@master/src/assets/img/jvhe.png"
               ></v-img>
             </div>
             <div>
@@ -31,11 +31,21 @@
               </div>
               <v-text-field
                 solo
-                label="请输入要搜索的内容"
+                label="请输入在百度要搜索的内容"
                 class="rounded-pill pl-3"
                 append-icon="mdi-magnify"
                 v-model="searchKey"
                 @keyup.enter="baiduSearch"
+                v-if="logoShow"
+              ></v-text-field>
+              <v-text-field
+                solo
+                label="请输入在谷歌要搜索的内容"
+                class="rounded-pill pl-3"
+                append-icon="mdi-magnify"
+                v-model="searchKey"
+                @keyup.enter="baiduSearch"
+                v-else
               ></v-text-field>
             </div>
 
