@@ -58,7 +58,7 @@ export default {
       //   .catch((err) => {});
       // console.log("11111");
       // this.$router.push(`/api/s?wd=${this.searchKey}`);
-      window.location.href = `http://www.baidu.com/s?wd=${this.searchKey}`;
+      window.location.href = `http://www.baidu.com/s?ie=utf-8&wd=${this.searchKey}`;
     },
   },
 };
