@@ -17,13 +17,13 @@
             <div>
               <div class="float-left pt-1" @click="logoShow = !logoShow">
                 <v-img
-                  src="@/assets/img/baidu.png"
+                  src="../assets/img/baidu.png"
                   max-height="40"
                   max-width="40"
                   v-if="logoShow"
                 ></v-img>
                 <v-img
-                  src="@/assets/img/google.png"
+                  src="../assets/img/google.png"
                   max-height="40"
                   max-width="40"
                   v-else
@@ -101,7 +101,6 @@ export default {
 <style scoped>
 /*@import url('')*/
 a {
-  text-decoration: none !important
+  text-decoration: none !important;
 }
-
 </style>
